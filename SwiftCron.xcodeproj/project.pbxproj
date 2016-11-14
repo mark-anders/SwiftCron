@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AA2AEE01DDA5C16009A2EC2 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AECD1DDA5C16009A2EC2 /* Int+Extensions.swift */; };
+		9AA2AEE11DDA5C16009A2EC2 /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AECE1DDA5C16009A2EC2 /* NSDate+Extensions.swift */; };
+		9AA2AEE21DDA5C16009A2EC2 /* NSDateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AECF1DDA5C16009A2EC2 /* NSDateFormatter+Extensions.swift */; };
+		9AA2AEE31DDA5C16009A2EC2 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AED01DDA5C16009A2EC2 /* String+Extensions.swift */; };
+		9AA2AEE41DDA5C16009A2EC2 /* DayOfMonthField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AED21DDA5C16009A2EC2 /* DayOfMonthField.swift */; };
+		9AA2AEE51DDA5C16009A2EC2 /* DayOfWeekField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AED31DDA5C16009A2EC2 /* DayOfWeekField.swift */; };
+		9AA2AEE61DDA5C16009A2EC2 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AED41DDA5C16009A2EC2 /* Field.swift */; };
+		9AA2AEE71DDA5C16009A2EC2 /* HoursField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AED51DDA5C16009A2EC2 /* HoursField.swift */; };
+		9AA2AEE81DDA5C16009A2EC2 /* MinutesField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AED61DDA5C16009A2EC2 /* MinutesField.swift */; };
+		9AA2AEE91DDA5C16009A2EC2 /* MonthField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AED71DDA5C16009A2EC2 /* MonthField.swift */; };
+		9AA2AEEA1DDA5C16009A2EC2 /* YearField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AED81DDA5C16009A2EC2 /* YearField.swift */; };
+		9AA2AEEB1DDA5C16009A2EC2 /* CronFieldTranslatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AEDA1DDA5C16009A2EC2 /* CronFieldTranslatable.swift */; };
+		9AA2AEEC1DDA5C16009A2EC2 /* FieldInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AEDB1DDA5C16009A2EC2 /* FieldInterface.swift */; };
+		9AA2AEED1DDA5C16009A2EC2 /* CronDescriptionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AEDD1DDA5C16009A2EC2 /* CronDescriptionBuilder.swift */; };
+		9AA2AEEE1DDA5C16009A2EC2 /* CronExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AEDE1DDA5C16009A2EC2 /* CronExpression.swift */; };
+		9AA2AEEF1DDA5C16009A2EC2 /* CronRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AEDF1DDA5C16009A2EC2 /* CronRepresentation.swift */; };
+		9AA2AEFD1DDA5F5C009A2EC2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AA2AEFB1DDA5F5C009A2EC2 /* Info.plist */; };
+		9AA2AF021DDA6096009A2EC2 /* SwiftCron.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA2AF011DDA6096009A2EC2 /* SwiftCron.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AA2AF0C1DDA62C8009A2EC2 /* SwiftCron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACF05E81DDA5BA80060FF3A /* SwiftCron.framework */; };
+		9AA2AF1C1DDA633E009A2EC2 /* DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AF131DDA633E009A2EC2 /* DayTests.swift */; };
+		9AA2AF1D1DDA633E009A2EC2 /* DescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AF141DDA633E009A2EC2 /* DescriptionTests.swift */; };
+		9AA2AF1E1DDA633E009A2EC2 /* HourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AF151DDA633E009A2EC2 /* HourTests.swift */; };
+		9AA2AF1F1DDA633E009A2EC2 /* MinuteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AF161DDA633E009A2EC2 /* MinuteTests.swift */; };
+		9AA2AF201DDA633E009A2EC2 /* MonthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AF171DDA633E009A2EC2 /* MonthTests.swift */; };
+		9AA2AF211DDA633E009A2EC2 /* SwiftCronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AF181DDA633E009A2EC2 /* SwiftCronTests.swift */; };
+		9AA2AF221DDA633E009A2EC2 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AF191DDA633E009A2EC2 /* TestData.swift */; };
+		9AA2AF231DDA633E009A2EC2 /* WeekdayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AF1A1DDA633E009A2EC2 /* WeekdayTests.swift */; };
+		9AA2AF241DDA633E009A2EC2 /* YearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA2AF1B1DDA633E009A2EC2 /* YearTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AA2AF0D1DDA62C8009A2EC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ACF05DF1DDA5BA70060FF3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9ACF05E71DDA5BA80060FF3A;
+			remoteInfo = SwiftCron;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9AA2AECD1DDA5C16009A2EC2 /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		9AA2AECE1DDA5C16009A2EC2 /* NSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extensions.swift"; sourceTree = "<group>"; };
+		9AA2AECF1DDA5C16009A2EC2 /* NSDateFormatter+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		9AA2AED01DDA5C16009A2EC2 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		9AA2AED21DDA5C16009A2EC2 /* DayOfMonthField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfMonthField.swift; sourceTree = "<group>"; };
+		9AA2AED31DDA5C16009A2EC2 /* DayOfWeekField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfWeekField.swift; sourceTree = "<group>"; };
+		9AA2AED41DDA5C16009A2EC2 /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		9AA2AED51DDA5C16009A2EC2 /* HoursField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursField.swift; sourceTree = "<group>"; };
+		9AA2AED61DDA5C16009A2EC2 /* MinutesField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinutesField.swift; sourceTree = "<group>"; };
+		9AA2AED71DDA5C16009A2EC2 /* MonthField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthField.swift; sourceTree = "<group>"; };
+		9AA2AED81DDA5C16009A2EC2 /* YearField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearField.swift; sourceTree = "<group>"; };
+		9AA2AEDA1DDA5C16009A2EC2 /* CronFieldTranslatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CronFieldTranslatable.swift; sourceTree = "<group>"; };
+		9AA2AEDB1DDA5C16009A2EC2 /* FieldInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldInterface.swift; sourceTree = "<group>"; };
+		9AA2AEDD1DDA5C16009A2EC2 /* CronDescriptionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CronDescriptionBuilder.swift; sourceTree = "<group>"; };
+		9AA2AEDE1DDA5C16009A2EC2 /* CronExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CronExpression.swift; sourceTree = "<group>"; };
+		9AA2AEDF1DDA5C16009A2EC2 /* CronRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CronRepresentation.swift; sourceTree = "<group>"; };
+		9AA2AEFB1DDA5F5C009A2EC2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AA2AF011DDA6096009A2EC2 /* SwiftCron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftCron.h; sourceTree = "<group>"; };
+		9AA2AF071DDA62C8009A2EC2 /* SwiftCronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA2AF0B1DDA62C8009A2EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AA2AF121DDA633E009A2EC2 /* SwiftCronTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftCronTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		9AA2AF131DDA633E009A2EC2 /* DayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTests.swift; sourceTree = "<group>"; };
+		9AA2AF141DDA633E009A2EC2 /* DescriptionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTests.swift; sourceTree = "<group>"; };
+		9AA2AF151DDA633E009A2EC2 /* HourTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourTests.swift; sourceTree = "<group>"; };
+		9AA2AF161DDA633E009A2EC2 /* MinuteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinuteTests.swift; sourceTree = "<group>"; };
+		9AA2AF171DDA633E009A2EC2 /* MonthTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthTests.swift; sourceTree = "<group>"; };
+		9AA2AF181DDA633E009A2EC2 /* SwiftCronTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftCronTests.swift; sourceTree = "<group>"; };
+		9AA2AF191DDA633E009A2EC2 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		9AA2AF1A1DDA633E009A2EC2 /* WeekdayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekdayTests.swift; sourceTree = "<group>"; };
+		9AA2AF1B1DDA633E009A2EC2 /* YearTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearTests.swift; sourceTree = "<group>"; };
+		9ACF05E81DDA5BA80060FF3A /* SwiftCron.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCron.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AA2AF041DDA62C8009A2EC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA2AF0C1DDA62C8009A2EC2 /* SwiftCron.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACF05E41DDA5BA80060FF3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AA2AECA1DDA5C16009A2EC2 /* SwiftCron */ = {
+			isa = PBXGroup;
+			children = (
+				9AA2AF011DDA6096009A2EC2 /* SwiftCron.h */,
+				9AA2AEFB1DDA5F5C009A2EC2 /* Info.plist */,
+				9AA2AECB1DDA5C16009A2EC2 /* Classes */,
+			);
+			path = SwiftCron;
+			sourceTree = "<group>";
+		};
+		9AA2AECB1DDA5C16009A2EC2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9AA2AECC1DDA5C16009A2EC2 /* Extensions */,
+				9AA2AED11DDA5C16009A2EC2 /* Field Checkers */,
+				9AA2AED91DDA5C16009A2EC2 /* Interfaces */,
+				9AA2AEDC1DDA5C16009A2EC2 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9AA2AECC1DDA5C16009A2EC2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9AA2AECD1DDA5C16009A2EC2 /* Int+Extensions.swift */,
+				9AA2AECE1DDA5C16009A2EC2 /* NSDate+Extensions.swift */,
+				9AA2AECF1DDA5C16009A2EC2 /* NSDateFormatter+Extensions.swift */,
+				9AA2AED01DDA5C16009A2EC2 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9AA2AED11DDA5C16009A2EC2 /* Field Checkers */ = {
+			isa = PBXGroup;
+			children = (
+				9AA2AED21DDA5C16009A2EC2 /* DayOfMonthField.swift */,
+				9AA2AED31DDA5C16009A2EC2 /* DayOfWeekField.swift */,
+				9AA2AED41DDA5C16009A2EC2 /* Field.swift */,
+				9AA2AED51DDA5C16009A2EC2 /* HoursField.swift */,
+				9AA2AED61DDA5C16009A2EC2 /* MinutesField.swift */,
+				9AA2AED71DDA5C16009A2EC2 /* MonthField.swift */,
+				9AA2AED81DDA5C16009A2EC2 /* YearField.swift */,
+			);
+			path = "Field Checkers";
+			sourceTree = "<group>";
+		};
+		9AA2AED91DDA5C16009A2EC2 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				9AA2AEDA1DDA5C16009A2EC2 /* CronFieldTranslatable.swift */,
+				9AA2AEDB1DDA5C16009A2EC2 /* FieldInterface.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		9AA2AEDC1DDA5C16009A2EC2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9AA2AEDD1DDA5C16009A2EC2 /* CronDescriptionBuilder.swift */,
+				9AA2AEDE1DDA5C16009A2EC2 /* CronExpression.swift */,
+				9AA2AEDF1DDA5C16009A2EC2 /* CronRepresentation.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9AA2AF081DDA62C8009A2EC2 /* SwiftCronTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AA2AF131DDA633E009A2EC2 /* DayTests.swift */,
+				9AA2AF141DDA633E009A2EC2 /* DescriptionTests.swift */,
+				9AA2AF151DDA633E009A2EC2 /* HourTests.swift */,
+				9AA2AF161DDA633E009A2EC2 /* MinuteTests.swift */,
+				9AA2AF171DDA633E009A2EC2 /* MonthTests.swift */,
+				9AA2AF181DDA633E009A2EC2 /* SwiftCronTests.swift */,
+				9AA2AF191DDA633E009A2EC2 /* TestData.swift */,
+				9AA2AF1A1DDA633E009A2EC2 /* WeekdayTests.swift */,
+				9AA2AF1B1DDA633E009A2EC2 /* YearTests.swift */,
+				9AA2AF0B1DDA62C8009A2EC2 /* Info.plist */,
+				9AA2AF121DDA633E009A2EC2 /* SwiftCronTests-Bridging-Header.h */,
+			);
+			path = SwiftCronTests;
+			sourceTree = "<group>";
+		};
+		9ACF05DE1DDA5BA70060FF3A = {
+			isa = PBXGroup;
+			children = (
+				9AA2AECA1DDA5C16009A2EC2 /* SwiftCron */,
+				9AA2AF081DDA62C8009A2EC2 /* SwiftCronTests */,
+				9ACF05E91DDA5BA80060FF3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9ACF05E91DDA5BA80060FF3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ACF05E81DDA5BA80060FF3A /* SwiftCron.framework */,
+				9AA2AF071DDA62C8009A2EC2 /* SwiftCronTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9ACF05E51DDA5BA80060FF3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA2AF021DDA6096009A2EC2 /* SwiftCron.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9AA2AF061DDA62C8009A2EC2 /* SwiftCronTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AA2AF0F1DDA62C8009A2EC2 /* Build configuration list for PBXNativeTarget "SwiftCronTests" */;
+			buildPhases = (
+				9AA2AF031DDA62C8009A2EC2 /* Sources */,
+				9AA2AF041DDA62C8009A2EC2 /* Frameworks */,
+				9AA2AF051DDA62C8009A2EC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AA2AF0E1DDA62C8009A2EC2 /* PBXTargetDependency */,
+			);
+			name = SwiftCronTests;
+			productName = SwiftCronTests;
+			productReference = 9AA2AF071DDA62C8009A2EC2 /* SwiftCronTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9ACF05E71DDA5BA80060FF3A /* SwiftCron */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ACF05F01DDA5BA80060FF3A /* Build configuration list for PBXNativeTarget "SwiftCron" */;
+			buildPhases = (
+				9ACF05E31DDA5BA80060FF3A /* Sources */,
+				9ACF05E41DDA5BA80060FF3A /* Frameworks */,
+				9ACF05E51DDA5BA80060FF3A /* Headers */,
+				9ACF05E61DDA5BA80060FF3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCron;
+			productName = SwiftCron;
+			productReference = 9ACF05E81DDA5BA80060FF3A /* SwiftCron.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9ACF05DF1DDA5BA70060FF3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "P1vot LLC";
+				TargetAttributes = {
+					9AA2AF061DDA62C8009A2EC2 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = W3B9X7Q3YQ;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					9ACF05E71DDA5BA80060FF3A = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = W3B9X7Q3YQ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9ACF05E21DDA5BA70060FF3A /* Build configuration list for PBXProject "SwiftCron" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9ACF05DE1DDA5BA70060FF3A;
+			productRefGroup = 9ACF05E91DDA5BA80060FF3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9ACF05E71DDA5BA80060FF3A /* SwiftCron */,
+				9AA2AF061DDA62C8009A2EC2 /* SwiftCronTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AA2AF051DDA62C8009A2EC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACF05E61DDA5BA80060FF3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA2AEFD1DDA5F5C009A2EC2 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AA2AF031DDA62C8009A2EC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA2AF1D1DDA633E009A2EC2 /* DescriptionTests.swift in Sources */,
+				9AA2AF201DDA633E009A2EC2 /* MonthTests.swift in Sources */,
+				9AA2AF241DDA633E009A2EC2 /* YearTests.swift in Sources */,
+				9AA2AF231DDA633E009A2EC2 /* WeekdayTests.swift in Sources */,
+				9AA2AF1F1DDA633E009A2EC2 /* MinuteTests.swift in Sources */,
+				9AA2AF211DDA633E009A2EC2 /* SwiftCronTests.swift in Sources */,
+				9AA2AF1C1DDA633E009A2EC2 /* DayTests.swift in Sources */,
+				9AA2AF221DDA633E009A2EC2 /* TestData.swift in Sources */,
+				9AA2AF1E1DDA633E009A2EC2 /* HourTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ACF05E31DDA5BA80060FF3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AA2AEE71DDA5C16009A2EC2 /* HoursField.swift in Sources */,
+				9AA2AEE51DDA5C16009A2EC2 /* DayOfWeekField.swift in Sources */,
+				9AA2AEED1DDA5C16009A2EC2 /* CronDescriptionBuilder.swift in Sources */,
+				9AA2AEE41DDA5C16009A2EC2 /* DayOfMonthField.swift in Sources */,
+				9AA2AEE81DDA5C16009A2EC2 /* MinutesField.swift in Sources */,
+				9AA2AEE31DDA5C16009A2EC2 /* String+Extensions.swift in Sources */,
+				9AA2AEE11DDA5C16009A2EC2 /* NSDate+Extensions.swift in Sources */,
+				9AA2AEE21DDA5C16009A2EC2 /* NSDateFormatter+Extensions.swift in Sources */,
+				9AA2AEEF1DDA5C16009A2EC2 /* CronRepresentation.swift in Sources */,
+				9AA2AEE61DDA5C16009A2EC2 /* Field.swift in Sources */,
+				9AA2AEE01DDA5C16009A2EC2 /* Int+Extensions.swift in Sources */,
+				9AA2AEEB1DDA5C16009A2EC2 /* CronFieldTranslatable.swift in Sources */,
+				9AA2AEEA1DDA5C16009A2EC2 /* YearField.swift in Sources */,
+				9AA2AEEC1DDA5C16009A2EC2 /* FieldInterface.swift in Sources */,
+				9AA2AEEE1DDA5C16009A2EC2 /* CronExpression.swift in Sources */,
+				9AA2AEE91DDA5C16009A2EC2 /* MonthField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AA2AF0E1DDA62C8009A2EC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9ACF05E71DDA5BA80060FF3A /* SwiftCron */;
+			targetProxy = 9AA2AF0D1DDA62C8009A2EC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9AA2AF101DDA62C8009A2EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = W3B9X7Q3YQ;
+				INFOPLIST_FILE = SwiftCronTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.p1vot.SwiftCronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftCronTests/SwiftCronTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		9AA2AF111DDA62C8009A2EC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = W3B9X7Q3YQ;
+				INFOPLIST_FILE = SwiftCronTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.p1vot.SwiftCronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftCronTests/SwiftCronTests-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+		9ACF05EE1DDA5BA80060FF3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9ACF05EF1DDA5BA80060FF3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9ACF05F11DDA5BA80060FF3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W3B9X7Q3YQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftCron/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.p1vot.SwiftCron;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		9ACF05F21DDA5BA80060FF3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W3B9X7Q3YQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftCron/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.p1vot.SwiftCron;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AA2AF0F1DDA62C8009A2EC2 /* Build configuration list for PBXNativeTarget "SwiftCronTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA2AF101DDA62C8009A2EC2 /* Debug */,
+				9AA2AF111DDA62C8009A2EC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9ACF05E21DDA5BA70060FF3A /* Build configuration list for PBXProject "SwiftCron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACF05EE1DDA5BA80060FF3A /* Debug */,
+				9ACF05EF1DDA5BA80060FF3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ACF05F01DDA5BA80060FF3A /* Build configuration list for PBXNativeTarget "SwiftCron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ACF05F11DDA5BA80060FF3A /* Debug */,
+				9ACF05F21DDA5BA80060FF3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9ACF05DF1DDA5BA70060FF3A /* Project object */;
+}
