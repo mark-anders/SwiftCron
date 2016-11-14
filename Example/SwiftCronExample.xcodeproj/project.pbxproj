@@ -21,8 +21,25 @@
 		8679D2B51CE1F51F0071D783 /* WeekdayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8679D2AF1CE1F51F0071D783 /* WeekdayTests.swift */; };
 		8679D2B61CE1F51F0071D783 /* YearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8679D2B01CE1F51F0071D783 /* YearTests.swift */; };
 		8679D2B81CE1FA760071D783 /* DescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8679D2B71CE1FA760071D783 /* DescriptionTests.swift */; };
-		E048D8BD8613C0CAF3BB4824 /* Pods_SwiftCronExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8E7C90A033C373325A9FC6 /* Pods_SwiftCronExample.framework */; };
-		FDCC4D322535804B48C02ECA /* Pods_SwiftCronExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A585942BE5510532D56F9F1 /* Pods_SwiftCronExampleTests.framework */; };
+		9AE3B5741DDA47DA00A5E8E4 /* SwiftCron.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AE3B5721DDA47DA00A5E8E4 /* SwiftCron.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AE3B5771DDA47DA00A5E8E4 /* SwiftCron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE3B5701DDA47DA00A5E8E4 /* SwiftCron.framework */; };
+		9AE3B5781DDA47DA00A5E8E4 /* SwiftCron.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE3B5701DDA47DA00A5E8E4 /* SwiftCron.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9AE3B5921DDA47F900A5E8E4 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B57F1DDA47F900A5E8E4 /* Int+Extensions.swift */; };
+		9AE3B5931DDA47F900A5E8E4 /* NSDate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B5801DDA47F900A5E8E4 /* NSDate+Extensions.swift */; };
+		9AE3B5941DDA47F900A5E8E4 /* NSDateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B5811DDA47F900A5E8E4 /* NSDateFormatter+Extensions.swift */; };
+		9AE3B5951DDA47F900A5E8E4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B5821DDA47F900A5E8E4 /* String+Extensions.swift */; };
+		9AE3B5961DDA47F900A5E8E4 /* DayOfMonthField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B5841DDA47F900A5E8E4 /* DayOfMonthField.swift */; };
+		9AE3B5971DDA47F900A5E8E4 /* DayOfWeekField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B5851DDA47F900A5E8E4 /* DayOfWeekField.swift */; };
+		9AE3B5981DDA47F900A5E8E4 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B5861DDA47F900A5E8E4 /* Field.swift */; };
+		9AE3B5991DDA47F900A5E8E4 /* HoursField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B5871DDA47F900A5E8E4 /* HoursField.swift */; };
+		9AE3B59A1DDA47F900A5E8E4 /* MinutesField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B5881DDA47F900A5E8E4 /* MinutesField.swift */; };
+		9AE3B59B1DDA47F900A5E8E4 /* MonthField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B5891DDA47F900A5E8E4 /* MonthField.swift */; };
+		9AE3B59C1DDA47F900A5E8E4 /* YearField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B58A1DDA47F900A5E8E4 /* YearField.swift */; };
+		9AE3B59D1DDA47F900A5E8E4 /* CronFieldTranslatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B58C1DDA47F900A5E8E4 /* CronFieldTranslatable.swift */; };
+		9AE3B59E1DDA47F900A5E8E4 /* FieldInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B58D1DDA47F900A5E8E4 /* FieldInterface.swift */; };
+		9AE3B59F1DDA47F900A5E8E4 /* CronDescriptionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B58F1DDA47F900A5E8E4 /* CronDescriptionBuilder.swift */; };
+		9AE3B5A01DDA47F900A5E8E4 /* CronExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B5901DDA47F900A5E8E4 /* CronExpression.swift */; };
+		9AE3B5A11DDA47F900A5E8E4 /* CronRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE3B5911DDA47F900A5E8E4 /* CronRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +50,28 @@
 			remoteGlobalIDString = 8679D2701CE1F4730071D783;
 			remoteInfo = SwiftCronExample;
 		};
+		9AE3B5751DDA47DA00A5E8E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8679D2691CE1F4730071D783 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE3B56F1DDA47DA00A5E8E4;
+			remoteInfo = SwiftCron;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9AE3B57C1DDA47DA00A5E8E4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9AE3B5781DDA47DA00A5E8E4 /* SwiftCron.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F8ABF1B000AF874C484BB4D /* Pods-SwiftCronExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCronExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCronExample/Pods-SwiftCronExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +98,25 @@
 		86D78E8B1CF58EEE000CAD8A /* SwiftCron.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCron.framework; path = "../../../Library/Developer/Xcode/DerivedData/SwiftCronExample-cjweqqzmcjxhcufttvfiyyabbzfi/Build/Products/Debug-iphonesimulator/SwiftCron/SwiftCron.framework"; sourceTree = "<group>"; };
 		95BBA9DA1D0C16C3004C765A /* SwiftCron.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCron.framework; path = "../../../Library/Developer/Xcode/DerivedData/SwiftCronExample-adstpubkvtswoaboiajnrzswdzah/Build/Products/Debug-iphonesimulator/SwiftCron/SwiftCron.framework"; sourceTree = "<group>"; };
 		9A585942BE5510532D56F9F1 /* Pods_SwiftCronExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCronExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE3B5701DDA47DA00A5E8E4 /* SwiftCron.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftCron.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE3B5721DDA47DA00A5E8E4 /* SwiftCron.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCron.h; sourceTree = "<group>"; };
+		9AE3B5731DDA47DA00A5E8E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AE3B57F1DDA47F900A5E8E4 /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		9AE3B5801DDA47F900A5E8E4 /* NSDate+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extensions.swift"; sourceTree = "<group>"; };
+		9AE3B5811DDA47F900A5E8E4 /* NSDateFormatter+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		9AE3B5821DDA47F900A5E8E4 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		9AE3B5841DDA47F900A5E8E4 /* DayOfMonthField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfMonthField.swift; sourceTree = "<group>"; };
+		9AE3B5851DDA47F900A5E8E4 /* DayOfWeekField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayOfWeekField.swift; sourceTree = "<group>"; };
+		9AE3B5861DDA47F900A5E8E4 /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		9AE3B5871DDA47F900A5E8E4 /* HoursField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursField.swift; sourceTree = "<group>"; };
+		9AE3B5881DDA47F900A5E8E4 /* MinutesField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinutesField.swift; sourceTree = "<group>"; };
+		9AE3B5891DDA47F900A5E8E4 /* MonthField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthField.swift; sourceTree = "<group>"; };
+		9AE3B58A1DDA47F900A5E8E4 /* YearField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearField.swift; sourceTree = "<group>"; };
+		9AE3B58C1DDA47F900A5E8E4 /* CronFieldTranslatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CronFieldTranslatable.swift; sourceTree = "<group>"; };
+		9AE3B58D1DDA47F900A5E8E4 /* FieldInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldInterface.swift; sourceTree = "<group>"; };
+		9AE3B58F1DDA47F900A5E8E4 /* CronDescriptionBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CronDescriptionBuilder.swift; sourceTree = "<group>"; };
+		9AE3B5901DDA47F900A5E8E4 /* CronExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CronExpression.swift; sourceTree = "<group>"; };
+		9AE3B5911DDA47F900A5E8E4 /* CronRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CronRepresentation.swift; sourceTree = "<group>"; };
 		9FC712B82D2D075E149E73AB /* Pods-SwiftCronExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCronExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCronExampleTests/Pods-SwiftCronExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		A8CB7B09FFB21F86177ED344 /* Pods-SwiftCronExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCronExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCronExample/Pods-SwiftCronExample.release.xcconfig"; sourceTree = "<group>"; };
 		EB8E7C90A033C373325A9FC6 /* Pods_SwiftCronExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCronExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E048D8BD8613C0CAF3BB4824 /* Pods_SwiftCronExample.framework in Frameworks */,
+				9AE3B5771DDA47DA00A5E8E4 /* SwiftCron.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +135,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDCC4D322535804B48C02ECA /* Pods_SwiftCronExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE3B56C1DDA47DA00A5E8E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +175,7 @@
 			children = (
 				8679D2731CE1F4730071D783 /* SwiftCronExample */,
 				8679D2881CE1F4740071D783 /* SwiftCronExampleTests */,
+				9AE3B5711DDA47DA00A5E8E4 /* SwiftCron */,
 				8679D2721CE1F4730071D783 /* Products */,
 				7714A611C69AD2EBBC5DE2B2 /* Pods */,
 				4C8B47A9EA0B22235461D031 /* Frameworks */,
@@ -123,6 +187,7 @@
 			children = (
 				8679D2711CE1F4730071D783 /* SwiftCronExample.app */,
 				8679D2851CE1F4740071D783 /* SwiftCronExampleTests.xctest */,
+				9AE3B5701DDA47DA00A5E8E4 /* SwiftCron.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,23 +223,99 @@
 			path = SwiftCronExampleTests;
 			sourceTree = "<group>";
 		};
+		9AE3B5711DDA47DA00A5E8E4 /* SwiftCron */ = {
+			isa = PBXGroup;
+			children = (
+				9AE3B57D1DDA47F900A5E8E4 /* Classes */,
+				9AE3B5721DDA47DA00A5E8E4 /* SwiftCron.h */,
+				9AE3B5731DDA47DA00A5E8E4 /* Info.plist */,
+			);
+			path = SwiftCron;
+			sourceTree = "<group>";
+		};
+		9AE3B57D1DDA47F900A5E8E4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9AE3B57E1DDA47F900A5E8E4 /* Extensions */,
+				9AE3B5831DDA47F900A5E8E4 /* Field Checkers */,
+				9AE3B58B1DDA47F900A5E8E4 /* Interfaces */,
+				9AE3B58E1DDA47F900A5E8E4 /* Main */,
+			);
+			name = Classes;
+			path = ../../SwiftCron/Classes;
+			sourceTree = "<group>";
+		};
+		9AE3B57E1DDA47F900A5E8E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9AE3B57F1DDA47F900A5E8E4 /* Int+Extensions.swift */,
+				9AE3B5801DDA47F900A5E8E4 /* NSDate+Extensions.swift */,
+				9AE3B5811DDA47F900A5E8E4 /* NSDateFormatter+Extensions.swift */,
+				9AE3B5821DDA47F900A5E8E4 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9AE3B5831DDA47F900A5E8E4 /* Field Checkers */ = {
+			isa = PBXGroup;
+			children = (
+				9AE3B5841DDA47F900A5E8E4 /* DayOfMonthField.swift */,
+				9AE3B5851DDA47F900A5E8E4 /* DayOfWeekField.swift */,
+				9AE3B5861DDA47F900A5E8E4 /* Field.swift */,
+				9AE3B5871DDA47F900A5E8E4 /* HoursField.swift */,
+				9AE3B5881DDA47F900A5E8E4 /* MinutesField.swift */,
+				9AE3B5891DDA47F900A5E8E4 /* MonthField.swift */,
+				9AE3B58A1DDA47F900A5E8E4 /* YearField.swift */,
+			);
+			path = "Field Checkers";
+			sourceTree = "<group>";
+		};
+		9AE3B58B1DDA47F900A5E8E4 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				9AE3B58C1DDA47F900A5E8E4 /* CronFieldTranslatable.swift */,
+				9AE3B58D1DDA47F900A5E8E4 /* FieldInterface.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		9AE3B58E1DDA47F900A5E8E4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9AE3B58F1DDA47F900A5E8E4 /* CronDescriptionBuilder.swift */,
+				9AE3B5901DDA47F900A5E8E4 /* CronExpression.swift */,
+				9AE3B5911DDA47F900A5E8E4 /* CronRepresentation.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9AE3B56D1DDA47DA00A5E8E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE3B5741DDA47DA00A5E8E4 /* SwiftCron.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		8679D2701CE1F4730071D783 /* SwiftCronExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8679D28E1CE1F4740071D783 /* Build configuration list for PBXNativeTarget "SwiftCronExample" */;
 			buildPhases = (
-				E87025957E0569C2E0F11DA7 /* [CP] Check Pods Manifest.lock */,
 				8679D26D1CE1F4730071D783 /* Sources */,
 				8679D26E1CE1F4730071D783 /* Frameworks */,
 				8679D26F1CE1F4730071D783 /* Resources */,
-				42C8277495ABC8132337E07F /* [CP] Embed Pods Frameworks */,
-				32DF2E51192F05F6A8F079E6 /* [CP] Copy Pods Resources */,
+				9AE3B57C1DDA47DA00A5E8E4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9AE3B5761DDA47DA00A5E8E4 /* PBXTargetDependency */,
 			);
 			name = SwiftCronExample;
 			productName = SwiftCronExample;
@@ -185,12 +326,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8679D2911CE1F4740071D783 /* Build configuration list for PBXNativeTarget "SwiftCronExampleTests" */;
 			buildPhases = (
-				5C3A63B070FA8E0262619C5B /* [CP] Check Pods Manifest.lock */,
 				8679D2811CE1F4740071D783 /* Sources */,
 				8679D2821CE1F4740071D783 /* Frameworks */,
 				8679D2831CE1F4740071D783 /* Resources */,
-				FB1006182B176A61E545DAAD /* [CP] Embed Pods Frameworks */,
-				1E27C67471A351797CF56101 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +339,24 @@
 			productName = SwiftCronExampleTests;
 			productReference = 8679D2851CE1F4740071D783 /* SwiftCronExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AE3B56F1DDA47DA00A5E8E4 /* SwiftCron */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AE3B5791DDA47DA00A5E8E4 /* Build configuration list for PBXNativeTarget "SwiftCron" */;
+			buildPhases = (
+				9AE3B56B1DDA47DA00A5E8E4 /* Sources */,
+				9AE3B56C1DDA47DA00A5E8E4 /* Frameworks */,
+				9AE3B56D1DDA47DA00A5E8E4 /* Headers */,
+				9AE3B56E1DDA47DA00A5E8E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCron;
+			productName = SwiftCron;
+			productReference = 9AE3B5701DDA47DA00A5E8E4 /* SwiftCron.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -214,10 +370,19 @@
 				TargetAttributes = {
 					8679D2701CE1F4730071D783 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = W3B9X7Q3YQ;
+						LastSwiftMigration = 0810;
 					};
 					8679D2841CE1F4740071D783 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = W3B9X7Q3YQ;
+						LastSwiftMigration = 0810;
 						TestTargetID = 8679D2701CE1F4730071D783;
+					};
+					9AE3B56F1DDA47DA00A5E8E4 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = W3B9X7Q3YQ;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -236,6 +401,7 @@
 			targets = (
 				8679D2701CE1F4730071D783 /* SwiftCronExample */,
 				8679D2841CE1F4740071D783 /* SwiftCronExampleTests */,
+				9AE3B56F1DDA47DA00A5E8E4 /* SwiftCron */,
 			);
 		};
 /* End PBXProject section */
@@ -258,100 +424,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AE3B56E1DDA47DA00A5E8E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1E27C67471A351797CF56101 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCronExampleTests/Pods-SwiftCronExampleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		32DF2E51192F05F6A8F079E6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCronExample/Pods-SwiftCronExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		42C8277495ABC8132337E07F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCronExample/Pods-SwiftCronExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5C3A63B070FA8E0262619C5B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E87025957E0569C2E0F11DA7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FB1006182B176A61E545DAAD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCronExampleTests/Pods-SwiftCronExampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8679D26D1CE1F4730071D783 /* Sources */ = {
@@ -379,6 +459,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AE3B56B1DDA47DA00A5E8E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE3B5991DDA47F900A5E8E4 /* HoursField.swift in Sources */,
+				9AE3B5971DDA47F900A5E8E4 /* DayOfWeekField.swift in Sources */,
+				9AE3B59F1DDA47F900A5E8E4 /* CronDescriptionBuilder.swift in Sources */,
+				9AE3B5961DDA47F900A5E8E4 /* DayOfMonthField.swift in Sources */,
+				9AE3B59A1DDA47F900A5E8E4 /* MinutesField.swift in Sources */,
+				9AE3B5951DDA47F900A5E8E4 /* String+Extensions.swift in Sources */,
+				9AE3B5931DDA47F900A5E8E4 /* NSDate+Extensions.swift in Sources */,
+				9AE3B5941DDA47F900A5E8E4 /* NSDateFormatter+Extensions.swift in Sources */,
+				9AE3B5A11DDA47F900A5E8E4 /* CronRepresentation.swift in Sources */,
+				9AE3B5981DDA47F900A5E8E4 /* Field.swift in Sources */,
+				9AE3B5921DDA47F900A5E8E4 /* Int+Extensions.swift in Sources */,
+				9AE3B59D1DDA47F900A5E8E4 /* CronFieldTranslatable.swift in Sources */,
+				9AE3B59C1DDA47F900A5E8E4 /* YearField.swift in Sources */,
+				9AE3B59E1DDA47F900A5E8E4 /* FieldInterface.swift in Sources */,
+				9AE3B5A01DDA47F900A5E8E4 /* CronExpression.swift in Sources */,
+				9AE3B59B1DDA47F900A5E8E4 /* MonthField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -386,6 +489,11 @@
 			isa = PBXTargetDependency;
 			target = 8679D2701CE1F4730071D783 /* SwiftCronExample */;
 			targetProxy = 8679D2861CE1F4740071D783 /* PBXContainerItemProxy */;
+		};
+		9AE3B5761DDA47DA00A5E8E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AE3B56F1DDA47DA00A5E8E4 /* SwiftCron */;
+			targetProxy = 9AE3B5751DDA47DA00A5E8E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -451,6 +559,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -488,6 +597,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 2.3;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -496,11 +606,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0F8ABF1B000AF874C484BB4D /* Pods-SwiftCronExample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W3B9X7Q3YQ;
 				INFOPLIST_FILE = SwiftCronExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rush42.SwiftCronExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -508,11 +622,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A8CB7B09FFB21F86177ED344 /* Pods-SwiftCronExample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W3B9X7Q3YQ;
 				INFOPLIST_FILE = SwiftCronExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rush42.SwiftCronExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -522,12 +640,14 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = W3B9X7Q3YQ;
 				INFOPLIST_FILE = SwiftCronExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rush42.SwiftCronExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftCronExampleTests/SwiftCronExampleTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftCronExample.app/SwiftCronExample";
 			};
 			name = Debug;
@@ -538,12 +658,70 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = W3B9X7Q3YQ;
 				INFOPLIST_FILE = SwiftCronExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rush42.SwiftCronExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftCronExampleTests/SwiftCronExampleTests-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftCronExample.app/SwiftCronExample";
+			};
+			name = Release;
+		};
+		9AE3B57A1DDA47DA00A5E8E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W3B9X7Q3YQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftCron/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.p1vot.SwiftCron;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9AE3B57B1DDA47DA00A5E8E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = W3B9X7Q3YQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftCron/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.p1vot.SwiftCron;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -576,6 +754,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9AE3B5791DDA47DA00A5E8E4 /* Build configuration list for PBXNativeTarget "SwiftCron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE3B57A1DDA47DA00A5E8E4 /* Debug */,
+				9AE3B57B1DDA47DA00A5E8E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
