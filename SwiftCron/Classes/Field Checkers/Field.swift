@@ -4,6 +4,14 @@ class Field
 {
 	var fields: NSMutableArray?
 
+    /**
+     * Check to see if a field is satisfied by a value
+     *
+     * - parameter dateValue: Date value to check
+     * - parameter value: Value to test
+     *
+     * - Returns: Bool
+     */
 	func isSatisfied(dateValue: String, value: String) -> Bool
 	{
 		if isIncrementsOfRanges(value)
@@ -18,16 +26,38 @@ class Field
 		return value == "*" || dateValue == value
 	}
 
+    /**
+     * Check if a string value is a range (i.e. contains '-')
+     *
+     * - parameter value: Value to test
+     *
+     * - Returns: Bool
+     */
 	func isRange(value: String) -> Bool
 	{
 		return value.rangeOfString("-") != nil
 	}
 
+    /**
+     * Check if a value is an increments of ranges
+     *
+     * - parameter value: Value to test
+     *
+     * - Returns: Bool
+     */
 	func isIncrementsOfRanges(value: String) -> Bool
 	{
 		return value.rangeOfString("/") != nil
 	}
 
+    /**
+     * Test if a value is within a range
+     *
+     * - parameter dateValue: Set date value
+     * - parameter withValue: Value to test
+     *
+     * - Returns: Bool
+     */
 	func isInRange(dateValue: String, withValue value: String) -> Bool
 	{
 		let parts = value.componentsSeparatedByString("-")
@@ -35,6 +65,14 @@ class Field
 		return Int(dateValue) >= Int(parts[0]) && Int(dateValue) <= Int(parts[1])
 	}
 
+    /**
+     * Test if a value is within an increments of ranges (offset[-to]/step size)
+     *
+     * - parameter dateValue: Set date value
+     * - parameter value: Value to test
+     *
+     * - Returns: Bool
+     */
 	func isInIncrementsOfRanges(dateValue: String, withValue value: String) -> Bool
 	{
 		let parts = value.componentsSeparatedByString("/")
